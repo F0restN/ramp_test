@@ -50,6 +50,7 @@ export function App() {
 
         <hr className="RampBreak--l" />
 
+        {/* Input and Dropdown */}
         <InputSelect<Employee>
           isLoading={isLoading}
           defaultValue={EMPTY_EMPLOYEE}
@@ -71,9 +72,9 @@ export function App() {
 
         <div className="RampBreak--l" />
 
+        {/* Transactions with checkbox on the right */}
         <div className="RampGrid">
           <Transactions transactions={transactions} />
-
           {transactions !== null && (
             <button
               className="RampButton"
